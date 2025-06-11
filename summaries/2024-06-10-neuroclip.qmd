@@ -1,9 +1,7 @@
-# Paper Title: NeuroCLIP: Brain-Aligned Vision-Language Pretraining
-**Authors:** Smith et al.  
-**Published in:** NeurIPS 2024  
-**Link:** https://arxiv.org/abs/2401.00001  
-**Tags:** `vision-language` `rsa` `neuroscience`
-
+---
+title: "NeuroCLIP: Brain-Aligned Vision-Language Pretraining"
+date: 2024-06-10
+categories: [vision-language, neuroscience]
 ---
 
 ## 🔍 Summary

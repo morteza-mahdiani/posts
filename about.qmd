@@ -1,0 +1,6 @@
+---
+title: "About Me"
+format: html
+---
+
+I'm a master's student researching topics in AI and NeuroAI. This blog documents my thoughts on papers I've read.

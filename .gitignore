@@ -109,6 +109,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+/env/
 
 # Spyder project settings
 .spyderproject
@@ -137,3 +138,22 @@ dmypy.json
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+/.quarto/
+
+# Quarto build output
+_site/
+/_site/
+
+# Quarto system files (optional)
+.quarto/
+
+# OS or editor artifacts
+.DS_Store
+*.Rproj
+.Rhistory
+.RData
+__pycache__/
+.ipynb_checkpoints/
+/__pycache__/
+/.ipynb_checkpoints/

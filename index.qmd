@@ -1,0 +1,6 @@
+---
+title: "Welcome to My Research Blog"
+format: html
+---
+
+This blog contains summaries and reviews of academic papers I read during my master's project.
