@@ -1,0 +1,121 @@
+[
+  {
+    "objectID": "templates/paper-summary-template.html",
+    "href": "templates/paper-summary-template.html",
+    "title": "Paper Title: [TITLE]",
+    "section": "",
+    "text": "Authors: [Author Names]\nPublished in: [Conference/Journal, Year]\nLink: [DOI or arXiv link]\nTags: [domain] [technique] [application]\n\n\n\nA short overview of the research question and motivation.\n\n\n\n\n[Main finding 1]\n[Main finding 2]\n[Important method trick or clever idea]\n[Key result or conclusion]\n\n\n\n\n\nArchitecture / Model: [CLIP, GNN, Bayesian, etc.]\nDataset(s): [COCO, NSD, simulated, etc.]\nLoss Function: [e.g., CrossEntropy, RSA-based]\nEvaluation Metrics: [Accuracy, R^2, RSA score]\n\n\n\n\n\n[Summarize performance and baseline comparisons]\n\n\n\n\n\nStrengths:\n\n[…]\n\nWeaknesses or Limitations:\n\n[…]\n\nOpportunities for improvement or extension:\n\n[…]\n\n\n\n\n\n\n[How this connects to your master’s research]\n[What you learned or want to build on]"
+  },
+  {
+    "objectID": "templates/paper-summary-template.html#summary",
+    "href": "templates/paper-summary-template.html#summary",
+    "title": "Paper Title: [TITLE]",
+    "section": "",
+    "text": "A short overview of the research question and motivation."
+  },
+  {
+    "objectID": "templates/paper-summary-template.html#key-insights",
+    "href": "templates/paper-summary-template.html#key-insights",
+    "title": "Paper Title: [TITLE]",
+    "section": "",
+    "text": "[Main finding 1]\n[Main finding 2]\n[Important method trick or clever idea]\n[Key result or conclusion]"
+  },
+  {
+    "objectID": "templates/paper-summary-template.html#methods",
+    "href": "templates/paper-summary-template.html#methods",
+    "title": "Paper Title: [TITLE]",
+    "section": "",
+    "text": "Architecture / Model: [CLIP, GNN, Bayesian, etc.]\nDataset(s): [COCO, NSD, simulated, etc.]\nLoss Function: [e.g., CrossEntropy, RSA-based]\nEvaluation Metrics: [Accuracy, R^2, RSA score]"
+  },
+  {
+    "objectID": "templates/paper-summary-template.html#results",
+    "href": "templates/paper-summary-template.html#results",
+    "title": "Paper Title: [TITLE]",
+    "section": "",
+    "text": "[Summarize performance and baseline comparisons]"
+  },
+  {
+    "objectID": "templates/paper-summary-template.html#critique-thoughts",
+    "href": "templates/paper-summary-template.html#critique-thoughts",
+    "title": "Paper Title: [TITLE]",
+    "section": "",
+    "text": "Strengths:\n\n[…]\n\nWeaknesses or Limitations:\n\n[…]\n\nOpportunities for improvement or extension:\n\n[…]"
+  },
+  {
+    "objectID": "templates/paper-summary-template.html#relevance-to-my-work",
+    "href": "templates/paper-summary-template.html#relevance-to-my-work",
+    "title": "Paper Title: [TITLE]",
+    "section": "",
+    "text": "[How this connects to your master’s research]\n[What you learned or want to build on]"
+  },
+  {
+    "objectID": "summaries/2024-06-10-neuroclip.html",
+    "href": "summaries/2024-06-10-neuroclip.html",
+    "title": "NeuroCLIP: Brain-Aligned Vision-Language Pretraining",
+    "section": "",
+    "text": "This paper introduces NeuroCLIP, a contrastive pretraining framework that aligns visual and textual embeddings with neural activity in the human brain."
+  },
+  {
+    "objectID": "summaries/2024-06-10-neuroclip.html#summary",
+    "href": "summaries/2024-06-10-neuroclip.html#summary",
+    "title": "NeuroCLIP: Brain-Aligned Vision-Language Pretraining",
+    "section": "",
+    "text": "This paper introduces NeuroCLIP, a contrastive pretraining framework that aligns visual and textual embeddings with neural activity in the human brain."
+  },
+  {
+    "objectID": "summaries/2024-06-10-neuroclip.html#key-insights",
+    "href": "summaries/2024-06-10-neuroclip.html#key-insights",
+    "title": "NeuroCLIP: Brain-Aligned Vision-Language Pretraining",
+    "section": "🧠 Key Insights",
+    "text": "🧠 Key Insights\n\nBrain-aligned objectives improve generalization in zero-shot tasks.\nRSA loss on fMRI data encourages more biologically plausible embeddings.\nUses CLIP backbone with additional brain alignment head."
+  },
+  {
+    "objectID": "summaries/2024-06-10-neuroclip.html#methods",
+    "href": "summaries/2024-06-10-neuroclip.html#methods",
+    "title": "NeuroCLIP: Brain-Aligned Vision-Language Pretraining",
+    "section": "📊 Methods",
+    "text": "📊 Methods\n\nArchitecture / Model: CLIP + linear projection to brain RDM space\nDataset(s): NSD (Natural Scenes Dataset)\nLoss Function: Contrastive + RSA alignment loss\nEvaluation Metrics: RSA score, retrieval accuracy"
+  },
+  {
+    "objectID": "summaries/2024-06-10-neuroclip.html#results",
+    "href": "summaries/2024-06-10-neuroclip.html#results",
+    "title": "NeuroCLIP: Brain-Aligned Vision-Language Pretraining",
+    "section": "🧪 Results",
+    "text": "🧪 Results\n\nNeuroCLIP outperforms vanilla CLIP on neural alignment benchmarks.\nShows higher RSA scores in MST and VTC regions."
+  },
+  {
+    "objectID": "summaries/2024-06-10-neuroclip.html#critique-thoughts",
+    "href": "summaries/2024-06-10-neuroclip.html#critique-thoughts",
+    "title": "NeuroCLIP: Brain-Aligned Vision-Language Pretraining",
+    "section": "🤔 Critique / Thoughts",
+    "text": "🤔 Critique / Thoughts\n\nStrengths:\n\nIntegrates cognitive neuroscience into VLM training.\n\nWeaknesses:\n\nAssumes RSA is the ideal metric—could explore alternatives.\n\nOpportunities:\n\nApply to other sensory modalities or extend to continual learning."
+  },
+  {
+    "objectID": "summaries/2024-06-10-neuroclip.html#relevance-to-my-work",
+    "href": "summaries/2024-06-10-neuroclip.html#relevance-to-my-work",
+    "title": "NeuroCLIP: Brain-Aligned Vision-Language Pretraining",
+    "section": "🔗 Relevance to My Work",
+    "text": "🔗 Relevance to My Work\n\nDirectly relates to my master’s project on aligning vision models with brain data.\nI can build on their RSA-based loss function for my own training loop."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "I’m a master’s student researching topics in AI and NeuroAI. This blog documents my thoughts on papers I’ve read."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to My Research Blog",
+    "section": "",
+    "text": "This blog contains summaries and reviews of academic papers I read during my master’s project."
+  },
+  {
+    "objectID": "summaries/index.html",
+    "href": "summaries/index.html",
+    "title": "My Paper Reviews",
+    "section": "",
+    "text": "A collection of research paper summaries and reviews.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNeuroCLIP: Brain-Aligned Vision-Language Pretraining\n\n\n\n\n\n\n\n\nJun 10, 2024\n\n\n\n\n\nNo matching items"
+  }
+]
