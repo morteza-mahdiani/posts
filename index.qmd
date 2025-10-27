@@ -3,4 +3,4 @@ title: "Welcome to My Research Blog"
 format: html
 ---
 
-This blog contains summaries and reviews of academic papers I read during my master's project.
+I'm writing about topics in AI and NeuroAI. This blog documents my thoughts on papers I've read and is just based on my personal thoughts.

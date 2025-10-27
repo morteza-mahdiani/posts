@@ -1,0 +1,258 @@
+---
+title: "Timeline of Brain Encoding/Decoding Model Generations"
+date: 2025-10-27
+categories: [brain-encoding, neuroAI, timeline, fMRI]
+generation: Timeline
+arc: both
+timeline_role: "Overview of brain encoding/decoding evolution 2008-2025"
+draft: false
+---
+
+## 🎯 Purpose / Goal
+
+This page tracks how brain encoding/decoding models evolved from 2008 → 2025.
+It's not just "more accuracy over time." It's a shift in *how we think the cortex works* and *how we interface with it*.
+
+I break the field into 5 generations:
+
+1. Hand-crafted encoders
+2. Deep linear encoders
+3. Factorized / receptive-field encoders
+4. Transformer brain encoders
+5. Generative brain decoders
+
+I also split them into two arcs:
+
+* **Encoding (stimulus → brain)** through Gen0 → Gen3
+* **Decoding (brain → stimulus)** in Gen4
+
+---
+
+## ⏳ High-Level Timeline
+
+```text
+Gen0 (2008–2014)
+Hand-crafted encoding models
+"Voxel = weighted sum of human-designed features
+ + pRF (receptive field) models"
+
+        ↓
+
+Gen1 (~2015+)
+Deep feature → linear voxel regression
+"DNN features from CNN/ViT go directly
+ into a linear regressor per voxel"
+Güçlü & van Gerven 2015. 
+
+        ↓
+
+Gen2 (~2018+)
+Feature-weighted receptive field (fwRF)
+"Each voxel = WHERE it looks in the image
+ × WHAT feature channels it prefers"
+St-Yves & Naselaris 2018. 
+
+        ↓
+
+Gen3 (2023 → 2025)
+Transformer brain encoders
+"Brain is not passive.
+Cortical regions become learned queries
+ that actively pull relevant visual tokens"
+Adeli, Sun & Kriegeskorte 2023 → 2025. 
+
+        ↓
+
+Gen4 (2023 → 2025)
+Generative brain decoders
+"fMRI → CLIP / diffusion latent → reconstruct image/video"
+Takagi & Nishimoto 2023;
+MindEye2 2024;
+NeuroClips / NeuroSwift 2024–2025. 
+```
+
+---
+
+## 🧬 Gen0. Hand-Crafted Encoding Models / pRF Era (pre-deep learning)
+
+**Core idea:** Explain each voxel in terms of known visual/semantic features designed by humans (edges, motion, category labels) and spatial receptive fields (pRF).
+These are linear encoding models: stimulus features → voxel response. This era established the concept of "encoding model" in vision neuroscience and produced early natural-image reconstructions from fMRI.
+
+**What they assume about cortex:**
+
+* Voxels behave like small receptive fields over the visual field.
+* Higher areas can be modeled with semantic feature weights (e.g. "is there a face?").
+* The mapping is linear and interpretable.
+
+**Why it matters:**
+
+* Sets up the whole evaluation paradigm: *if we can predict the voxel from the stimulus, we "understand" that voxel*.
+* Gives us pRF mapping in V1/V2/V3 and semantic maps in higher ventral stream.
+
+**Representative work:**
+
+* Early voxel-wise encoding models and pRF modeling from Gallant lab and related work in the late 2000s–early 2010s showing natural image identification from brain activity and mapping visual field positions in cortex.
+
+**Tag for posts:** `gen0-handcrafted`, `pRF`, `semantic-features`
+
+---
+
+## 🧠 Gen1. Deep Feature → Linear Voxel Regression (2015+)
+
+**Core idea:** Use deep neural network features (CNNs, later ViTs / CLIP) instead of hand-crafted features, but still fit a mostly linear model *per voxel* (ridge / linear regression).
+This is sometimes still called an "encoding model," but now the features come from a trained vision model.
+
+**Pipeline (per voxel v):**
+
+```text
+Image
+  → Deep CNN / ViT features
+      → Flatten / pool to one big feature vector
+          → Linear/Ridge regression for voxel v
+              → Predicted response y_v
+```
+
+**Why this was huge:**
+
+* Revealed that deeper CNN layers align with higher-level ventral visual cortex (object/face/scene regions), and shallow layers align with early V1/V2: this gave a direct "DNN ≈ ventral stream hierarchy" story.
+* Dramatically improved prediction quality in high-level visual areas compared to Gen0.
+
+**Limitations:**
+
+* Parameter explosion: one regressor per voxel.
+* Treats each voxel as an isolated unit, not part of a structured region.
+* Basically assumes "voxel = weighted sum of global features," which is too naive mechanistically.
+
+**Representative paper:**
+
+* Güçlü & van Gerven (2015), *Deep Neural Networks Reveal a Gradient in the Complexity of Neural Representations across the Ventral Stream*, Journal of Neuroscience 2015. They show a complexity gradient along ventral stream using deep convnet features to predict voxel activity.
+
+**Tag for posts:** `gen1-linear`, `voxel-regression`, `ventral-hierarchy`
+
+---
+
+## 👁 Gen2. Feature-Weighted Receptive Field / Spatially Factorized Encoding (2018+)
+
+**Core idea:** Instead of "one giant weight vector per voxel," model two factors:
+
+1. **WHERE** in the visual field the voxel pools from (a spatial receptive field / pooling map)
+2. **WHAT** features it prefers (channel weights over the feature maps)
+
+Then multiply them. This is sometimes called fwRF (feature-weighted receptive field).
+
+**Pipeline (voxel-level concept):**
+
+```text
+Image
+  → Deep vision backbone
+      → Spatial feature maps (tokens with location info)
+
+For each voxel:
+  - Spatial module learns a pooling mask over locations (voxel's receptive field)
+  - Feature module learns preferred feature channels
+  - Combine (spatial_mask ⊗ feature_weights) to get predicted response
+```
+
+**Why this matters:**
+
+* Way more interpretable: for a single voxel, you can say "it looks here, for these kinds of features."
+* Matches biology in early visual cortex (retinotopic, localized receptive fields).
+* More parameter-efficient and structured than Gen1.
+* This style becomes the "strong baseline" people compare against in 2020–2024, especially for early visual areas.
+
+**Limitations (and what comes next calls out):**
+
+* Mostly static: assumes each voxel has a fixed receptive field and tuning.
+* Works great in early visual cortex, but high-level category-selective cortex (face areas, scene areas) isn't just "a neat little Gaussian receptive field."
+* Doesn't model flexible, semantic routing.
+
+**Representative paper:**
+
+* St-Yves & Naselaris (2018), *The feature-weighted receptive field: an interpretable encoding model for complex feature spaces*, NeuroImage 2018. They explicitly sell fwRF as interpretable, scalable, and anatomically grounded.
+
+**Tag for posts:** `gen2-fwrf`, `spatial-factorization`, `receptive-field`
+
+---
+
+## 🧲 Gen3. Transformer Brain Encoders (2023 → 2025)
+
+This is where the field stops thinking "a voxel is a passive receiver" and starts thinking "a cortical area is an active querying agent."
+
+We can break Gen3 into two key milestones.
+
+### Gen3A (2023): Transformers as the Readout
+
+**Core idea:**
+Instead of fitting one regressor per voxel, train a transformer to map visual tokens → brain responses under natural viewing. The model learns global correspondences between vision embeddings and cortical activity.
+This shows "brain prediction = sequence modeling / attention," not just voxel-wise ridge.
+
+**Representative work:**
+
+* Adeli, Sun & Kriegeskorte (2023), often described in the Algonauts Challenge 2023 context as "Predicting brain activity using Transformers." They take frozen self-supervised ViT-style features (e.g. DINOv2-like encoders) and learn a transformer module to directly predict fMRI responses for natural scenes.
+
+**Why it matters:**
+
+* First serious "the readout itself is a transformer."
+* Starts generalizing beyond early visual cortex.
+
+**Tag:** `gen3-transformer-proto`, `algonauts2023`, `image-to-fMRI`
+
+---
+
+### Gen3B (2025): ROI-Query Cortical Routing
+
+**Core idea:**
+Each cortical region of interest (ROI) is turned into its own learned **query token**.
+During inference:
+
+* ROI query token attends to visual tokens
+* Cross-attention pulls only the relevant visual information for that ROI
+* That becomes the predicted activity pattern for that region
+
+This is explicitly pitched as solving high-level, category-selective cortex (faces, scenes, bodies etc.) with:
+
+* better accuracy,
+* fewer parameters,
+* built-in interpretability through attention routing.
+
+**Representative work:**
+
+* Adeli, Sun & Kriegeskorte (2025), *Transformer brain encoders explain human high-level visual responses*, arXiv:2505.17329 (May 22, 2025).
+  Claims:
+
+  * Outperforms classic deep-linear encoders and fwRF-style models, especially in high-level visual cortex.
+  * Gives explicit "who-listened-to-what" maps via attention, which is way more neuroscientifically meaningful than post-hoc saliency.
+  * Uses fewer parameters than fitting one regressor per voxel.
+
+**Tag:** `gen3-transformer-roi`, `cortical-routing`, `high-level-cortex`
+
+**This is the inflection point I care about most.**
+
+---
+
+## 🎥 Gen4. Generative Brain Decoders (2023 → 2025)
+
+Everything above is **encoding** (stimulus → brain).
+Gen4 is **decoding** (brain → stimulus).
+This is a different arc, but historically it explodes in parallel 2023–2025, and it's now merging back into alignment work.
+
+**Core idea:**
+Map brain activity into some latent semantic/visual space (CLIP text/image embeddings, Stable Diffusion latent codes, video diffusion tokens), and then generate an output that looks like / describes what the subject saw.
+So instead of "can I predict your voxel responses from the image," it's "can I guess the image from your voxel responses."
+
+### Gen4A. Brain → Image via Diffusion
+
+* Takagi & Nishimoto (2023), CVPR 2023: map fMRI to Stable Diffusion latent space and reconstruct high-resolution images a subject viewed. This was one of the first convincing "this is roughly what you saw" demos and got a lot of public attention.
+* MindEye2 (2024): improves practicality by creating shared-subject models so new subjects need ~1 hour of data instead of huge personalized training. Uses CLIP-like latent alignment + diffusion decoding. This is framed as making fMRI→image reconstruction more scalable.
+
+### Gen4B. Brain → Video via Video Diffusion
+
+* NeuroClips (2024): splits decoding into a "semantic reconstructor" and a "perception reconstructor," then drives a text-to-video diffusion model to generate multi-second clips with smoother temporal dynamics.
+* NeuroSwift (2025): aims at subject efficiency + limited GPU cost, pushing toward "usable, near-real-time-ish" decoding pipelines.
+
+**Why Gen4 matters even for encoding work:**
+
+* It proves the brain signal *contains* rich semantic and visual detail that can drive an actual generator.
+* It also closes the loop conceptually: Gen3 says "cortex is a set of queries that route content"; Gen4 says "that content can be turned back into pictures / video."
+
+**Tag:** `gen4-brain-to-image`, `diffusion`, `fMRI-decoding`, `video-reconstruction`
