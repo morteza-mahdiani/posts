@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2025-10-27">
+
+<title>Timeline of Brain Encoding/Decoding Model Generations – Personal Blog</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Personal Blog</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../summaries/index.html"> 
+<span class="menu-text">Posts</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose-goal" id="toc-purpose-goal" class="nav-link active" data-scroll-target="#purpose-goal">🎯 Purpose / Goal</a></li>
+  <li><a href="#high-level-timeline" id="toc-high-level-timeline" class="nav-link" data-scroll-target="#high-level-timeline">⏳ High-Level Timeline</a></li>
+  <li><a href="#gen0.-hand-crafted-encoding-models-prf-era-pre-deep-learning" id="toc-gen0.-hand-crafted-encoding-models-prf-era-pre-deep-learning" class="nav-link" data-scroll-target="#gen0.-hand-crafted-encoding-models-prf-era-pre-deep-learning">🧬 Gen0. Hand-Crafted Encoding Models / pRF Era (pre-deep learning)</a></li>
+  <li><a href="#gen1.-deep-feature-linear-voxel-regression-2015" id="toc-gen1.-deep-feature-linear-voxel-regression-2015" class="nav-link" data-scroll-target="#gen1.-deep-feature-linear-voxel-regression-2015">🧠 Gen1. Deep Feature → Linear Voxel Regression (2015+)</a></li>
+  <li><a href="#gen2.-feature-weighted-receptive-field-spatially-factorized-encoding-2018" id="toc-gen2.-feature-weighted-receptive-field-spatially-factorized-encoding-2018" class="nav-link" data-scroll-target="#gen2.-feature-weighted-receptive-field-spatially-factorized-encoding-2018">👁 Gen2. Feature-Weighted Receptive Field / Spatially Factorized Encoding (2018+)</a></li>
+  <li><a href="#gen3.-transformer-brain-encoders-2023-2025" id="toc-gen3.-transformer-brain-encoders-2023-2025" class="nav-link" data-scroll-target="#gen3.-transformer-brain-encoders-2023-2025">🧲 Gen3. Transformer Brain Encoders (2023 → 2025)</a>
+  <ul class="collapse">
+  <li><a href="#gen3a-2023-transformers-as-the-readout" id="toc-gen3a-2023-transformers-as-the-readout" class="nav-link" data-scroll-target="#gen3a-2023-transformers-as-the-readout">Gen3A (2023): Transformers as the Readout</a></li>
+  <li><a href="#gen3b-2025-roi-query-cortical-routing" id="toc-gen3b-2025-roi-query-cortical-routing" class="nav-link" data-scroll-target="#gen3b-2025-roi-query-cortical-routing">Gen3B (2025): ROI-Query Cortical Routing</a></li>
+  </ul></li>
+  <li><a href="#gen4.-generative-brain-decoders-2023-2025" id="toc-gen4.-generative-brain-decoders-2023-2025" class="nav-link" data-scroll-target="#gen4.-generative-brain-decoders-2023-2025">🎥 Gen4. Generative Brain Decoders (2023 → 2025)</a>
+  <ul class="collapse">
+  <li><a href="#gen4a.-brain-image-via-diffusion" id="toc-gen4a.-brain-image-via-diffusion" class="nav-link" data-scroll-target="#gen4a.-brain-image-via-diffusion">Gen4A. Brain → Image via Diffusion</a></li>
+  <li><a href="#gen4b.-brain-video-via-video-diffusion" id="toc-gen4b.-brain-video-via-video-diffusion" class="nav-link" data-scroll-target="#gen4b.-brain-video-via-video-diffusion">Gen4B. Brain → Video via Video Diffusion</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Timeline of Brain Encoding/Decoding Model Generations</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">brain-encoding</div>
+    <div class="quarto-category">neuroAI</div>
+    <div class="quarto-category">timeline</div>
+    <div class="quarto-category">fMRI</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 27, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="purpose-goal" class="level2">
+<h2 class="anchored" data-anchor-id="purpose-goal">🎯 Purpose / Goal</h2>
+<p>This page tracks how brain encoding/decoding models evolved from 2008 → 2025. It’s not just “more accuracy over time.” It’s a shift in <em>how we think the cortex works</em> and <em>how we interface with it</em>.</p>
+<p>I break the field into 5 generations:</p>
+<ol type="1">
+<li>Hand-crafted encoders</li>
+<li>Deep linear encoders</li>
+<li>Factorized / receptive-field encoders</li>
+<li>Transformer brain encoders</li>
+<li>Generative brain decoders</li>
+</ol>
+<p>I also split them into two arcs:</p>
+<ul>
+<li><strong>Encoding (stimulus → brain)</strong> through Gen0 → Gen3</li>
+<li><strong>Decoding (brain → stimulus)</strong> in Gen4</li>
+</ul>
+<hr>
+</section>
+<section id="high-level-timeline" class="level2">
+<h2 class="anchored" data-anchor-id="high-level-timeline">⏳ High-Level Timeline</h2>
+<pre class="text"><code>Gen0 (2008–2014)
+Hand-crafted encoding models
+"Voxel = weighted sum of human-designed features
+ + pRF (receptive field) models"
+
+        ↓
+
+Gen1 (~2015+)
+Deep feature → linear voxel regression
+"DNN features from CNN/ViT go directly
+ into a linear regressor per voxel"
+Güçlü &amp; van Gerven 2015. 
+
+        ↓
+
+Gen2 (~2018+)
+Feature-weighted receptive field (fwRF)
+"Each voxel = WHERE it looks in the image
+ × WHAT feature channels it prefers"
+St-Yves &amp; Naselaris 2018. 
+
+        ↓
+
+Gen3 (2023 → 2025)
+Transformer brain encoders
+"Brain is not passive.
+Cortical regions become learned queries
+ that actively pull relevant visual tokens"
+Adeli, Sun &amp; Kriegeskorte 2023 → 2025. 
+
+        ↓
+
+Gen4 (2023 → 2025)
+Generative brain decoders
+"fMRI → CLIP / diffusion latent → reconstruct image/video"
+Takagi &amp; Nishimoto 2023;
+MindEye2 2024;
+NeuroClips / NeuroSwift 2024–2025. </code></pre>
+<hr>
+</section>
+<section id="gen0.-hand-crafted-encoding-models-prf-era-pre-deep-learning" class="level2">
+<h2 class="anchored" data-anchor-id="gen0.-hand-crafted-encoding-models-prf-era-pre-deep-learning">🧬 Gen0. Hand-Crafted Encoding Models / pRF Era (pre-deep learning)</h2>
+<p><strong>Core idea:</strong> Explain each voxel in terms of known visual/semantic features designed by humans (edges, motion, category labels) and spatial receptive fields (pRF). These are linear encoding models: stimulus features → voxel response. This era established the concept of “encoding model” in vision neuroscience and produced early natural-image reconstructions from fMRI.</p>
+<p><strong>What they assume about cortex:</strong></p>
+<ul>
+<li>Voxels behave like small receptive fields over the visual field.</li>
+<li>Higher areas can be modeled with semantic feature weights (e.g.&nbsp;“is there a face?”).</li>
+<li>The mapping is linear and interpretable.</li>
+</ul>
+<p><strong>Why it matters:</strong></p>
+<ul>
+<li>Sets up the whole evaluation paradigm: <em>if we can predict the voxel from the stimulus, we “understand” that voxel</em>.</li>
+<li>Gives us pRF mapping in V1/V2/V3 and semantic maps in higher ventral stream.</li>
+</ul>
+<p><strong>Representative work:</strong></p>
+<ul>
+<li>Early voxel-wise encoding models and pRF modeling from Gallant lab and related work in the late 2000s–early 2010s showing natural image identification from brain activity and mapping visual field positions in cortex.</li>
+</ul>
+<p><strong>Tag for posts:</strong> <code>gen0-handcrafted</code>, <code>pRF</code>, <code>semantic-features</code></p>
+<hr>
+</section>
+<section id="gen1.-deep-feature-linear-voxel-regression-2015" class="level2">
+<h2 class="anchored" data-anchor-id="gen1.-deep-feature-linear-voxel-regression-2015">🧠 Gen1. Deep Feature → Linear Voxel Regression (2015+)</h2>
+<p><strong>Core idea:</strong> Use deep neural network features (CNNs, later ViTs / CLIP) instead of hand-crafted features, but still fit a mostly linear model <em>per voxel</em> (ridge / linear regression). This is sometimes still called an “encoding model,” but now the features come from a trained vision model.</p>
+<p><strong>Pipeline (per voxel v):</strong></p>
+<pre class="text"><code>Image
+  → Deep CNN / ViT features
+      → Flatten / pool to one big feature vector
+          → Linear/Ridge regression for voxel v
+              → Predicted response y_v</code></pre>
+<p><strong>Why this was huge:</strong></p>
+<ul>
+<li>Revealed that deeper CNN layers align with higher-level ventral visual cortex (object/face/scene regions), and shallow layers align with early V1/V2: this gave a direct “DNN ≈ ventral stream hierarchy” story.</li>
+<li>Dramatically improved prediction quality in high-level visual areas compared to Gen0.</li>
+</ul>
+<p><strong>Limitations:</strong></p>
+<ul>
+<li>Parameter explosion: one regressor per voxel.</li>
+<li>Treats each voxel as an isolated unit, not part of a structured region.</li>
+<li>Basically assumes “voxel = weighted sum of global features,” which is too naive mechanistically.</li>
+</ul>
+<p><strong>Representative paper:</strong></p>
+<ul>
+<li>Güçlü &amp; van Gerven (2015), <em>Deep Neural Networks Reveal a Gradient in the Complexity of Neural Representations across the Ventral Stream</em>, Journal of Neuroscience 2015. They show a complexity gradient along ventral stream using deep convnet features to predict voxel activity.</li>
+</ul>
+<p><strong>Tag for posts:</strong> <code>gen1-linear</code>, <code>voxel-regression</code>, <code>ventral-hierarchy</code></p>
+<hr>
+</section>
+<section id="gen2.-feature-weighted-receptive-field-spatially-factorized-encoding-2018" class="level2">
+<h2 class="anchored" data-anchor-id="gen2.-feature-weighted-receptive-field-spatially-factorized-encoding-2018">👁 Gen2. Feature-Weighted Receptive Field / Spatially Factorized Encoding (2018+)</h2>
+<p><strong>Core idea:</strong> Instead of “one giant weight vector per voxel,” model two factors:</p>
+<ol type="1">
+<li><strong>WHERE</strong> in the visual field the voxel pools from (a spatial receptive field / pooling map)</li>
+<li><strong>WHAT</strong> features it prefers (channel weights over the feature maps)</li>
+</ol>
+<p>Then multiply them. This is sometimes called fwRF (feature-weighted receptive field).</p>
+<p><strong>Pipeline (voxel-level concept):</strong></p>
+<pre class="text"><code>Image
+  → Deep vision backbone
+      → Spatial feature maps (tokens with location info)
+
+For each voxel:
+  - Spatial module learns a pooling mask over locations (voxel's receptive field)
+  - Feature module learns preferred feature channels
+  - Combine (spatial_mask ⊗ feature_weights) to get predicted response</code></pre>
+<p><strong>Why this matters:</strong></p>
+<ul>
+<li>Way more interpretable: for a single voxel, you can say “it looks here, for these kinds of features.”</li>
+<li>Matches biology in early visual cortex (retinotopic, localized receptive fields).</li>
+<li>More parameter-efficient and structured than Gen1.</li>
+<li>This style becomes the “strong baseline” people compare against in 2020–2024, especially for early visual areas.</li>
+</ul>
+<p><strong>Limitations (and what comes next calls out):</strong></p>
+<ul>
+<li>Mostly static: assumes each voxel has a fixed receptive field and tuning.</li>
+<li>Works great in early visual cortex, but high-level category-selective cortex (face areas, scene areas) isn’t just “a neat little Gaussian receptive field.”</li>
+<li>Doesn’t model flexible, semantic routing.</li>
+</ul>
+<p><strong>Representative paper:</strong></p>
+<ul>
+<li>St-Yves &amp; Naselaris (2018), <em>The feature-weighted receptive field: an interpretable encoding model for complex feature spaces</em>, NeuroImage 2018. They explicitly sell fwRF as interpretable, scalable, and anatomically grounded.</li>
+</ul>
+<p><strong>Tag for posts:</strong> <code>gen2-fwrf</code>, <code>spatial-factorization</code>, <code>receptive-field</code></p>
+<hr>
+</section>
+<section id="gen3.-transformer-brain-encoders-2023-2025" class="level2">
+<h2 class="anchored" data-anchor-id="gen3.-transformer-brain-encoders-2023-2025">🧲 Gen3. Transformer Brain Encoders (2023 → 2025)</h2>
+<p>This is where the field stops thinking “a voxel is a passive receiver” and starts thinking “a cortical area is an active querying agent.”</p>
+<p>We can break Gen3 into two key milestones.</p>
+<section id="gen3a-2023-transformers-as-the-readout" class="level3">
+<h3 class="anchored" data-anchor-id="gen3a-2023-transformers-as-the-readout">Gen3A (2023): Transformers as the Readout</h3>
+<p><strong>Core idea:</strong> Instead of fitting one regressor per voxel, train a transformer to map visual tokens → brain responses under natural viewing. The model learns global correspondences between vision embeddings and cortical activity. This shows “brain prediction = sequence modeling / attention,” not just voxel-wise ridge.</p>
+<p><strong>Representative work:</strong></p>
+<ul>
+<li>Adeli, Sun &amp; Kriegeskorte (2023), often described in the Algonauts Challenge 2023 context as “Predicting brain activity using Transformers.” They take frozen self-supervised ViT-style features (e.g.&nbsp;DINOv2-like encoders) and learn a transformer module to directly predict fMRI responses for natural scenes.</li>
+</ul>
+<p><strong>Why it matters:</strong></p>
+<ul>
+<li>First serious “the readout itself is a transformer.”</li>
+<li>Starts generalizing beyond early visual cortex.</li>
+</ul>
+<p><strong>Tag:</strong> <code>gen3-transformer-proto</code>, <code>algonauts2023</code>, <code>image-to-fMRI</code></p>
+<hr>
+</section>
+<section id="gen3b-2025-roi-query-cortical-routing" class="level3">
+<h3 class="anchored" data-anchor-id="gen3b-2025-roi-query-cortical-routing">Gen3B (2025): ROI-Query Cortical Routing</h3>
+<p><strong>Core idea:</strong> Each cortical region of interest (ROI) is turned into its own learned <strong>query token</strong>. During inference:</p>
+<ul>
+<li>ROI query token attends to visual tokens</li>
+<li>Cross-attention pulls only the relevant visual information for that ROI</li>
+<li>That becomes the predicted activity pattern for that region</li>
+</ul>
+<p>This is explicitly pitched as solving high-level, category-selective cortex (faces, scenes, bodies etc.) with:</p>
+<ul>
+<li>better accuracy,</li>
+<li>fewer parameters,</li>
+<li>built-in interpretability through attention routing.</li>
+</ul>
+<p><strong>Representative work:</strong></p>
+<ul>
+<li><p>Adeli, Sun &amp; Kriegeskorte (2025), <em>Transformer brain encoders explain human high-level visual responses</em>, arXiv:2505.17329 (May 22, 2025). Claims:</p>
+<ul>
+<li>Outperforms classic deep-linear encoders and fwRF-style models, especially in high-level visual cortex.</li>
+<li>Gives explicit “who-listened-to-what” maps via attention, which is way more neuroscientifically meaningful than post-hoc saliency.</li>
+<li>Uses fewer parameters than fitting one regressor per voxel.</li>
+</ul></li>
+</ul>
+<p><strong>Tag:</strong> <code>gen3-transformer-roi</code>, <code>cortical-routing</code>, <code>high-level-cortex</code></p>
+<p><strong>This is the inflection point I care about most.</strong></p>
+<hr>
+</section>
+</section>
+<section id="gen4.-generative-brain-decoders-2023-2025" class="level2">
+<h2 class="anchored" data-anchor-id="gen4.-generative-brain-decoders-2023-2025">🎥 Gen4. Generative Brain Decoders (2023 → 2025)</h2>
+<p>Everything above is <strong>encoding</strong> (stimulus → brain). Gen4 is <strong>decoding</strong> (brain → stimulus). This is a different arc, but historically it explodes in parallel 2023–2025, and it’s now merging back into alignment work.</p>
+<p><strong>Core idea:</strong> Map brain activity into some latent semantic/visual space (CLIP text/image embeddings, Stable Diffusion latent codes, video diffusion tokens), and then generate an output that looks like / describes what the subject saw. So instead of “can I predict your voxel responses from the image,” it’s “can I guess the image from your voxel responses.”</p>
+<section id="gen4a.-brain-image-via-diffusion" class="level3">
+<h3 class="anchored" data-anchor-id="gen4a.-brain-image-via-diffusion">Gen4A. Brain → Image via Diffusion</h3>
+<ul>
+<li>Takagi &amp; Nishimoto (2023), CVPR 2023: map fMRI to Stable Diffusion latent space and reconstruct high-resolution images a subject viewed. This was one of the first convincing “this is roughly what you saw” demos and got a lot of public attention.</li>
+<li>MindEye2 (2024): improves practicality by creating shared-subject models so new subjects need ~1 hour of data instead of huge personalized training. Uses CLIP-like latent alignment + diffusion decoding. This is framed as making fMRI→image reconstruction more scalable.</li>
+</ul>
+</section>
+<section id="gen4b.-brain-video-via-video-diffusion" class="level3">
+<h3 class="anchored" data-anchor-id="gen4b.-brain-video-via-video-diffusion">Gen4B. Brain → Video via Video Diffusion</h3>
+<ul>
+<li>NeuroClips (2024): splits decoding into a “semantic reconstructor” and a “perception reconstructor,” then drives a text-to-video diffusion model to generate multi-second clips with smoother temporal dynamics.</li>
+<li>NeuroSwift (2025): aims at subject efficiency + limited GPU cost, pushing toward “usable, near-real-time-ish” decoding pipelines.</li>
+</ul>
+<p><strong>Why Gen4 matters even for encoding work:</strong></p>
+<ul>
+<li>It proves the brain signal <em>contains</em> rich semantic and visual detail that can drive an actual generator.</li>
+<li>It also closes the loop conceptually: Gen3 says “cortex is a set of queries that route content”; Gen4 says “that content can be turned back into pictures / video.”</li>
+</ul>
+<p><strong>Tag:</strong> <code>gen4-brain-to-image</code>, <code>diffusion</code>, <code>fMRI-decoding</code>, <code>video-reconstruction</code></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/morteza-mahdiani\.github\.io\/posts");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

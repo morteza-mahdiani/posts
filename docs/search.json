@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "templates/post-template.html",
+    "href": "templates/post-template.html",
+    "title": "[Your Title Here]",
+    "section": "",
+    "text": "Brief explanation of what this post aims to accomplish or explain."
+  },
+  {
+    "objectID": "templates/post-template.html#purpose-goal",
+    "href": "templates/post-template.html#purpose-goal",
+    "title": "[Your Title Here]",
+    "section": "",
+    "text": "Brief explanation of what this post aims to accomplish or explain."
+  },
+  {
+    "objectID": "templates/post-template.html#main-content",
+    "href": "templates/post-template.html#main-content",
+    "title": "[Your Title Here]",
+    "section": "📝 Main Content",
+    "text": "📝 Main Content\n[Choose the sections that make sense for your content type]\n\nFor Tutorials/Guides:\n\nPrerequisites\nStep-by-step instructions\nCode examples\nExpected outcomes\n\n\n\nFor Timelines/Evolution Posts:\n\nKey periods/generations\nMajor developments\nInfluential works\nFuture directions\n\n\n\nFor Paper Summaries:\n\nKey insights\nMethods\nResults\nCritique\n\n\n\nFor Technical Overviews:\n\nCore concepts\nImplementation details\nUse cases\nBest practices"
+  },
+  {
+    "objectID": "templates/post-template.html#discussion-points",
+    "href": "templates/post-template.html#discussion-points",
+    "title": "[Your Title Here]",
+    "section": "💭 Discussion Points",
+    "text": "💭 Discussion Points\n\nInsights gained\nOpen questions\nFuture implications\nPersonal thoughts"
+  },
+  {
+    "objectID": "templates/post-template.html#references-resources",
+    "href": "templates/post-template.html#references-resources",
+    "title": "[Your Title Here]",
+    "section": "📚 References & Resources",
+    "text": "📚 References & Resources\n\nRelated works\nFurther reading\nUseful tools/libraries\nAdditional resources"
+  },
+  {
+    "objectID": "templates/post-template.html#updates",
+    "href": "templates/post-template.html#updates",
+    "title": "[Your Title Here]",
+    "section": "🔄 Updates",
+    "text": "🔄 Updates\n[Optional: Track major updates to this post] - YYYY-MM-DD: Initial post - YYYY-MM-DD: Added new section on X\n\nNotes on using this template\n\nCopy the YAML block at the top into a new .qmd file and fill the fields.\nOptional metadata you can add to the front matter for timeline/tracking: generation, arc, timeline_role.\n\nExample front matter you can paste into a new post:\n---\ntitle: \"Transformer Brain Encoders Explain Human High-Level Visual Responses\"\ndate: 2025-05-22\ncategories: [brain-encoding, cortex-routing, transformer, fMRI]\ngeneration: Gen3B\narc: encoding\ntimeline_role: \"2025 — ROI-query transformer encoders with cortical routing\"\ndraft: false\n---\nIf you want the template to be used automatically by Quarto/new-post scripts, rename this file or integrate it into your post generator. Otherwise, just copy/paste the YAML and the section headings you want into a new .qmd file."
+  },
+  {
+    "objectID": "summaries/brain-encoding-timeline.html",
+    "href": "summaries/brain-encoding-timeline.html",
+    "title": "Timeline of Brain Encoding/Decoding Model Generations",
+    "section": "",
+    "text": "This page tracks how brain encoding/decoding models evolved from 2008 → 2025. It’s not just “more accuracy over time.” It’s a shift in how we think the cortex works and how we interface with it.\nI break the field into 5 generations:\n\nHand-crafted encoders\nDeep linear encoders\nFactorized / receptive-field encoders\nTransformer brain encoders\nGenerative brain decoders\n\nI also split them into two arcs:\n\nEncoding (stimulus → brain) through Gen0 → Gen3\nDecoding (brain → stimulus) in Gen4"
+  },
+  {
+    "objectID": "summaries/brain-encoding-timeline.html#purpose-goal",
+    "href": "summaries/brain-encoding-timeline.html#purpose-goal",
+    "title": "Timeline of Brain Encoding/Decoding Model Generations",
+    "section": "",
+    "text": "This page tracks how brain encoding/decoding models evolved from 2008 → 2025. It’s not just “more accuracy over time.” It’s a shift in how we think the cortex works and how we interface with it.\nI break the field into 5 generations:\n\nHand-crafted encoders\nDeep linear encoders\nFactorized / receptive-field encoders\nTransformer brain encoders\nGenerative brain decoders\n\nI also split them into two arcs:\n\nEncoding (stimulus → brain) through Gen0 → Gen3\nDecoding (brain → stimulus) in Gen4"
+  },
+  {
+    "objectID": "summaries/brain-encoding-timeline.html#high-level-timeline",
+    "href": "summaries/brain-encoding-timeline.html#high-level-timeline",
+    "title": "Timeline of Brain Encoding/Decoding Model Generations",
+    "section": "⏳ High-Level Timeline",
+    "text": "⏳ High-Level Timeline\nGen0 (2008–2014)\nHand-crafted encoding models\n\"Voxel = weighted sum of human-designed features\n + pRF (receptive field) models\"\n\n        ↓\n\nGen1 (~2015+)\nDeep feature → linear voxel regression\n\"DNN features from CNN/ViT go directly\n into a linear regressor per voxel\"\nGüçlü & van Gerven 2015. \n\n        ↓\n\nGen2 (~2018+)\nFeature-weighted receptive field (fwRF)\n\"Each voxel = WHERE it looks in the image\n × WHAT feature channels it prefers\"\nSt-Yves & Naselaris 2018. \n\n        ↓\n\nGen3 (2023 → 2025)\nTransformer brain encoders\n\"Brain is not passive.\nCortical regions become learned queries\n that actively pull relevant visual tokens\"\nAdeli, Sun & Kriegeskorte 2023 → 2025. \n\n        ↓\n\nGen4 (2023 → 2025)\nGenerative brain decoders\n\"fMRI → CLIP / diffusion latent → reconstruct image/video\"\nTakagi & Nishimoto 2023;\nMindEye2 2024;\nNeuroClips / NeuroSwift 2024–2025."
+  },
+  {
+    "objectID": "summaries/brain-encoding-timeline.html#gen0.-hand-crafted-encoding-models-prf-era-pre-deep-learning",
+    "href": "summaries/brain-encoding-timeline.html#gen0.-hand-crafted-encoding-models-prf-era-pre-deep-learning",
+    "title": "Timeline of Brain Encoding/Decoding Model Generations",
+    "section": "🧬 Gen0. Hand-Crafted Encoding Models / pRF Era (pre-deep learning)",
+    "text": "🧬 Gen0. Hand-Crafted Encoding Models / pRF Era (pre-deep learning)\nCore idea: Explain each voxel in terms of known visual/semantic features designed by humans (edges, motion, category labels) and spatial receptive fields (pRF). These are linear encoding models: stimulus features → voxel response. This era established the concept of “encoding model” in vision neuroscience and produced early natural-image reconstructions from fMRI.\nWhat they assume about cortex:\n\nVoxels behave like small receptive fields over the visual field.\nHigher areas can be modeled with semantic feature weights (e.g. “is there a face?”).\nThe mapping is linear and interpretable.\n\nWhy it matters:\n\nSets up the whole evaluation paradigm: if we can predict the voxel from the stimulus, we “understand” that voxel.\nGives us pRF mapping in V1/V2/V3 and semantic maps in higher ventral stream.\n\nRepresentative work:\n\nEarly voxel-wise encoding models and pRF modeling from Gallant lab and related work in the late 2000s–early 2010s showing natural image identification from brain activity and mapping visual field positions in cortex.\n\nTag for posts: gen0-handcrafted, pRF, semantic-features"
+  },
+  {
+    "objectID": "summaries/brain-encoding-timeline.html#gen1.-deep-feature-linear-voxel-regression-2015",
+    "href": "summaries/brain-encoding-timeline.html#gen1.-deep-feature-linear-voxel-regression-2015",
+    "title": "Timeline of Brain Encoding/Decoding Model Generations",
+    "section": "🧠 Gen1. Deep Feature → Linear Voxel Regression (2015+)",
+    "text": "🧠 Gen1. Deep Feature → Linear Voxel Regression (2015+)\nCore idea: Use deep neural network features (CNNs, later ViTs / CLIP) instead of hand-crafted features, but still fit a mostly linear model per voxel (ridge / linear regression). This is sometimes still called an “encoding model,” but now the features come from a trained vision model.\nPipeline (per voxel v):\nImage\n  → Deep CNN / ViT features\n      → Flatten / pool to one big feature vector\n          → Linear/Ridge regression for voxel v\n              → Predicted response y_v\nWhy this was huge:\n\nRevealed that deeper CNN layers align with higher-level ventral visual cortex (object/face/scene regions), and shallow layers align with early V1/V2: this gave a direct “DNN ≈ ventral stream hierarchy” story.\nDramatically improved prediction quality in high-level visual areas compared to Gen0.\n\nLimitations:\n\nParameter explosion: one regressor per voxel.\nTreats each voxel as an isolated unit, not part of a structured region.\nBasically assumes “voxel = weighted sum of global features,” which is too naive mechanistically.\n\nRepresentative paper:\n\nGüçlü & van Gerven (2015), Deep Neural Networks Reveal a Gradient in the Complexity of Neural Representations across the Ventral Stream, Journal of Neuroscience 2015. They show a complexity gradient along ventral stream using deep convnet features to predict voxel activity.\n\nTag for posts: gen1-linear, voxel-regression, ventral-hierarchy"
+  },
+  {
+    "objectID": "summaries/brain-encoding-timeline.html#gen2.-feature-weighted-receptive-field-spatially-factorized-encoding-2018",
+    "href": "summaries/brain-encoding-timeline.html#gen2.-feature-weighted-receptive-field-spatially-factorized-encoding-2018",
+    "title": "Timeline of Brain Encoding/Decoding Model Generations",
+    "section": "👁 Gen2. Feature-Weighted Receptive Field / Spatially Factorized Encoding (2018+)",
+    "text": "👁 Gen2. Feature-Weighted Receptive Field / Spatially Factorized Encoding (2018+)\nCore idea: Instead of “one giant weight vector per voxel,” model two factors:\n\nWHERE in the visual field the voxel pools from (a spatial receptive field / pooling map)\nWHAT features it prefers (channel weights over the feature maps)\n\nThen multiply them. This is sometimes called fwRF (feature-weighted receptive field).\nPipeline (voxel-level concept):\nImage\n  → Deep vision backbone\n      → Spatial feature maps (tokens with location info)\n\nFor each voxel:\n  - Spatial module learns a pooling mask over locations (voxel's receptive field)\n  - Feature module learns preferred feature channels\n  - Combine (spatial_mask ⊗ feature_weights) to get predicted response\nWhy this matters:\n\nWay more interpretable: for a single voxel, you can say “it looks here, for these kinds of features.”\nMatches biology in early visual cortex (retinotopic, localized receptive fields).\nMore parameter-efficient and structured than Gen1.\nThis style becomes the “strong baseline” people compare against in 2020–2024, especially for early visual areas.\n\nLimitations (and what comes next calls out):\n\nMostly static: assumes each voxel has a fixed receptive field and tuning.\nWorks great in early visual cortex, but high-level category-selective cortex (face areas, scene areas) isn’t just “a neat little Gaussian receptive field.”\nDoesn’t model flexible, semantic routing.\n\nRepresentative paper:\n\nSt-Yves & Naselaris (2018), The feature-weighted receptive field: an interpretable encoding model for complex feature spaces, NeuroImage 2018. They explicitly sell fwRF as interpretable, scalable, and anatomically grounded.\n\nTag for posts: gen2-fwrf, spatial-factorization, receptive-field"
+  },
+  {
+    "objectID": "summaries/brain-encoding-timeline.html#gen3.-transformer-brain-encoders-2023-2025",
+    "href": "summaries/brain-encoding-timeline.html#gen3.-transformer-brain-encoders-2023-2025",
+    "title": "Timeline of Brain Encoding/Decoding Model Generations",
+    "section": "🧲 Gen3. Transformer Brain Encoders (2023 → 2025)",
+    "text": "🧲 Gen3. Transformer Brain Encoders (2023 → 2025)\nThis is where the field stops thinking “a voxel is a passive receiver” and starts thinking “a cortical area is an active querying agent.”\nWe can break Gen3 into two key milestones.\n\nGen3A (2023): Transformers as the Readout\nCore idea: Instead of fitting one regressor per voxel, train a transformer to map visual tokens → brain responses under natural viewing. The model learns global correspondences between vision embeddings and cortical activity. This shows “brain prediction = sequence modeling / attention,” not just voxel-wise ridge.\nRepresentative work:\n\nAdeli, Sun & Kriegeskorte (2023), often described in the Algonauts Challenge 2023 context as “Predicting brain activity using Transformers.” They take frozen self-supervised ViT-style features (e.g. DINOv2-like encoders) and learn a transformer module to directly predict fMRI responses for natural scenes.\n\nWhy it matters:\n\nFirst serious “the readout itself is a transformer.”\nStarts generalizing beyond early visual cortex.\n\nTag: gen3-transformer-proto, algonauts2023, image-to-fMRI\n\n\n\nGen3B (2025): ROI-Query Cortical Routing\nCore idea: Each cortical region of interest (ROI) is turned into its own learned query token. During inference:\n\nROI query token attends to visual tokens\nCross-attention pulls only the relevant visual information for that ROI\nThat becomes the predicted activity pattern for that region\n\nThis is explicitly pitched as solving high-level, category-selective cortex (faces, scenes, bodies etc.) with:\n\nbetter accuracy,\nfewer parameters,\nbuilt-in interpretability through attention routing.\n\nRepresentative work:\n\nAdeli, Sun & Kriegeskorte (2025), Transformer brain encoders explain human high-level visual responses, arXiv:2505.17329 (May 22, 2025). Claims:\n\nOutperforms classic deep-linear encoders and fwRF-style models, especially in high-level visual cortex.\nGives explicit “who-listened-to-what” maps via attention, which is way more neuroscientifically meaningful than post-hoc saliency.\nUses fewer parameters than fitting one regressor per voxel.\n\n\nTag: gen3-transformer-roi, cortical-routing, high-level-cortex\nThis is the inflection point I care about most."
+  },
+  {
+    "objectID": "summaries/brain-encoding-timeline.html#gen4.-generative-brain-decoders-2023-2025",
+    "href": "summaries/brain-encoding-timeline.html#gen4.-generative-brain-decoders-2023-2025",
+    "title": "Timeline of Brain Encoding/Decoding Model Generations",
+    "section": "🎥 Gen4. Generative Brain Decoders (2023 → 2025)",
+    "text": "🎥 Gen4. Generative Brain Decoders (2023 → 2025)\nEverything above is encoding (stimulus → brain). Gen4 is decoding (brain → stimulus). This is a different arc, but historically it explodes in parallel 2023–2025, and it’s now merging back into alignment work.\nCore idea: Map brain activity into some latent semantic/visual space (CLIP text/image embeddings, Stable Diffusion latent codes, video diffusion tokens), and then generate an output that looks like / describes what the subject saw. So instead of “can I predict your voxel responses from the image,” it’s “can I guess the image from your voxel responses.”\n\nGen4A. Brain → Image via Diffusion\n\nTakagi & Nishimoto (2023), CVPR 2023: map fMRI to Stable Diffusion latent space and reconstruct high-resolution images a subject viewed. This was one of the first convincing “this is roughly what you saw” demos and got a lot of public attention.\nMindEye2 (2024): improves practicality by creating shared-subject models so new subjects need ~1 hour of data instead of huge personalized training. Uses CLIP-like latent alignment + diffusion decoding. This is framed as making fMRI→image reconstruction more scalable.\n\n\n\nGen4B. Brain → Video via Video Diffusion\n\nNeuroClips (2024): splits decoding into a “semantic reconstructor” and a “perception reconstructor,” then drives a text-to-video diffusion model to generate multi-second clips with smoother temporal dynamics.\nNeuroSwift (2025): aims at subject efficiency + limited GPU cost, pushing toward “usable, near-real-time-ish” decoding pipelines.\n\nWhy Gen4 matters even for encoding work:\n\nIt proves the brain signal contains rich semantic and visual detail that can drive an actual generator.\nIt also closes the loop conceptually: Gen3 says “cortex is a set of queries that route content”; Gen4 says “that content can be turned back into pictures / video.”\n\nTag: gen4-brain-to-image, diffusion, fMRI-decoding, video-reconstruction"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to My Research Blog",
+    "section": "",
+    "text": "I’m writing about topics in AI and NeuroAI. This blog documents my thoughts on papers I’ve read and is just based on my personal thoughts."
+  },
+  {
+    "objectID": "summaries/index.html",
+    "href": "summaries/index.html",
+    "title": "Research Notes & Timelines",
+    "section": "",
+    "text": "Collection of research notes, paper summaries, and field timelines.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\nTimeline of Brain Encoding/Decoding Model Generations\n\n\n\nbrain-encoding\n\nneuroAI\n\ntimeline\n\nfMRI\n\n\n\n\n\n\nOct 27, 2025\n\n\n\n\n\nNo matching items"
+  }
+]

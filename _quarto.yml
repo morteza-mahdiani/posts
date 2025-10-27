@@ -4,6 +4,9 @@ project:
 
 website:
   title: "Personal Blog"
+  site-url: https://morteza-mahdiani.github.io/posts
+  repo-url: https://github.com/morteza-mahdiani/posts
+  site-path: /posts/
   navbar:
     left:
       - text: "Home"
