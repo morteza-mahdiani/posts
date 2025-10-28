@@ -98,6 +98,10 @@ __pypackages__/
 celerybeat-schedule
 celerybeat.pid
 
+# Quarto site output
+_site/
+/_site/
+
 # SageMath parsed files
 *.sage.py
 
